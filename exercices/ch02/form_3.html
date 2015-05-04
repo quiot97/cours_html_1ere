@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Liste</title>
+  </head>
+  <body>
+      <h1>Envoyez-nous un mail</h1>
+        <form method="post" action="send.php">
+          <label>
+                to :
+                <input type="email" name="to" list="contacts"> 
+            </label>
+            <br><br>
+            <label>
+                cc :
+                <input type="email" name="cc" list="contacts"> 
+            </label>
+            <br><br>
+            <label>
+                Votre commentaire :
+                <textarea maxlength="50" name="commentaire" cols="20" rows="10" wrap="hard"></textarea>
+            </label>
+            <br><br>
+            <button type="sbmit">Envoyer</button>
+        <datalist id="contacts">
+            <option value="info@cpnv.ch" label="La fillière automatique">
+            <option value="media@cpnv.ch" label="La fillière electronique">
+            <option value="meca@cpnv.ch" label="La fillière info">
+            <option value="help@cpnv.ch" label="La fillière media">
+        </datalist>
+  </body>
+</html>

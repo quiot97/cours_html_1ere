@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inscrivez-vous</title>
+  </head>
+  <body>
+      <h1>Inscrivez-vous sur mon site</h1>
+        <form method="post" action="unscript.php">
+          <label>
+                Entrez votre nom :
+                <input type="text" placeholder="Entrez votre nom" maxlength="50" name="username"> 
+            </label>
+            <br><br>
+            <label>
+                Entrez votre âge :
+                <input type="number" min="16" max="29" size="2" placeholder="Entrez votre âge" name="age"> 
+            </label>
+            <br><br>
+            Féminin <input type="radio">
+            <br>
+            Masculin <input type="radio" name="radio">
+            <br><br>
+             Newletter<input type="radio" name="accept_cg">
+            <br>
+            J'accepte les conditions générales <input type="accept_cg">
+            <br><br>
+            <input type="submit" name="submit" value="Envoyer">
+        </form>
+      
+  </body>
+</html>

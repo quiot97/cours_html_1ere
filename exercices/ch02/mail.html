@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Liste</title>
+  </head>
+  <body>
+      <h1>Envoyez-nous un mail</h1>
+        <form method="post" action="unscript.php">
+          <label>
+                to :
+                <input type="email" name="to" list="contacts"> 
+            </label>
+            <br><br>
+            <label>
+                cc :
+                <input type="email" name="cc" list="contacts"> 
+            </label>
+            <br><br>
+            <label>
+                niveau :
+                <input type="range" name="a" list="a-values" step="10"> 
+            </label>
+            <br><br>
+           <label>
+                Votre commentaire :
+                <textarea maxlength="150" name="commentaire" cols="20" rows="4" wrap="hard"></textarea>
+            </label>
+            <br><br>
+            <label>
+                Votre sms :
+                <textarea maxlength="150" name="sms" cols="20" rows="4" wrap="soft"></textarea>
+            </label>
+            <br><br>
+            <fieldset>
+                <legend>Hello</legend>
+                <select id="country" name="country">
+                    <option value="CH">Suisse</option>
+                    <option value="FR">France</option>
+                    <option value=""selected>Choissez un pays</option>
+                </select>
+                <br><br>
+                <select id="country" name="country" multiple>
+                    <option value="">Choissez un pays</option>
+                    <option value="CH">Suisse</option>
+                    <option value="FR">France</option>
+                </select>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <input type="submit" name="submit" value="Envoyer">
+            <br><br>
+            <button type="sbmit">Envoyer</button>
+        </form>
+        <datalist id="contacts">
+            <option value="automatique@cpnv.ch" label="La fillière automatique">
+            <option value="electronique@cpnv.ch" label="La fillière electronique">
+            <option value="info@cpnv.ch" label="La fillière info">
+            <option value="media@cpnv.ch" label="La fillière media">
+            <option value="support@cpnv.ch" label="La fillière support">
+        </datalist>
+        <datalist id="a-values">
+            <option value="10" label="Low">
+            <option value="90" label="High">
+        </datalist>      
+  </body>
+</html>
